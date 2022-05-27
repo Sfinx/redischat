@@ -1,0 +1,11 @@
+*.o
+app.h
+.depend
+*.png
+.gdb_history
+*.000
+*.upx
+redischat*
+peda-session*.txt
+db
+backup.tgz

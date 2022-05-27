@@ -1,0 +1,12 @@
+version: '3.7'
+services:
+  redis:
+    # user: "${UID}:${GID}"
+    container_name: redis
+    image: redis:latest
+    command: redis-server --save 30 1 --loglevel warning --requirepass ${REDIS_PASS:?password}
+    # environment:
+    ports:
+      - ${REDIS_PORT}:6379
+    volumes:
+      - ./db:/data
