@@ -1,0 +1,6 @@
+
+https://github.com/dragonflydb/dragonfly
+
+	docker pull docker.dragonflydb.io/dragonflydb/dragonfly && docker tag docker.dragonflydb.io/dragonflydb/dragonfly dragonfly
+	docker run --network=host --ulimit memlock=-1 --rm dragonfly
+
